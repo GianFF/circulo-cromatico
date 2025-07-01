@@ -18,6 +18,6 @@ export class ChromaticCircle {
     if (!colorMixer) {
       throw new Error(`No color mixer found that can handle filter: ${this.filter}`);
     }
-    return colorMixer?.mixColors(color);
+    return colorMixer.mixColors(color);
   }
 }
