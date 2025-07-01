@@ -1,5 +1,5 @@
 import { Color } from "./Color";
 
-export interface ColorInterface {
+export interface ColorMixer {
     mix(anotherColor: Color): Color;
 }

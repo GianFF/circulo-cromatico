@@ -1,8 +1,8 @@
 import { ColorMixer } from "./mixers/ColorMixer";
 import { Color } from "./Color";
-import { Blue } from "./mixers/BlueMixer";
+import { BlueMixer } from "./mixers/BlueMixer";
 import { RedMixer } from "./mixers/RedMixer";
-import { Yellow } from "./mixers/YellowMixer";
+import { YellowMixer } from "./mixers/YellowMixer";
 
 export class ChromaticCircle {
   private readonly filter: Color;
@@ -10,7 +10,7 @@ export class ChromaticCircle {
 
   constructor(filter: Color) {
     this.filter = filter;
-    this.mixers = [new Blue(), new RedMixer(), new Yellow()];
+    this.mixers = [new BlueMixer(), new RedMixer(), new YellowMixer()];
   }
 
   public mixColors(color: Color): Color {

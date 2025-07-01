@@ -1,7 +1,7 @@
-import { ColorInterface } from "./ColorInterface";
+import { ColorMixer } from "./ColorMixer";
 import { ColorEnum } from "./ColorEnum";
 
-export abstract class Color implements ColorInterface {
+export abstract class Color implements ColorMixer {
     protected readonly value: ColorEnum;
 
     constructor(value: ColorEnum) {

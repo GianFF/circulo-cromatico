@@ -1,7 +1,7 @@
 import { Color } from '../Color';
 import { ColorMixer } from './ColorMixer';
 
-export class Yellow implements ColorMixer {
+export class YellowMixer implements ColorMixer {
   private readonly color: Color;
 
   constructor() {

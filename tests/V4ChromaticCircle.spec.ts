@@ -1,9 +1,9 @@
-import { Blue } from '../src/colors/Blue';
-import { Green } from '../src/colors/Green';
-import { Orange } from '../src/colors/Orange';
-import { Red } from '../src/colors/Red';
-import { Violet } from '../src/colors/Violet';
-import { Yellow } from '../src/colors/Yellow';
+import { Blue } from '../src/v4/chromatic_circle/primary_colors/Blue';
+import { Green } from '../src/v4/chromatic_circle/secondary_colors/Green';
+import { Orange } from '../src/v4/chromatic_circle/secondary_colors/Orange';
+import { Red } from '../src/v4/chromatic_circle/primary_colors/Red';
+import { Violet } from '../src/v4/chromatic_circle/secondary_colors/Violet';
+import { Yellow } from '../src/v4/chromatic_circle/primary_colors/Yellow';
 
 describe('Color', () => {
     it('should return the same color when mixing with itself', () => {
@@ -73,6 +73,6 @@ describe('Color', () => {
         const aRed = new Red();
         const aViolet = new Violet();
 
-        expect(() => aRed.mix(aViolet)).toThrow('color: red not implemented.');
+        expect(() => aRed.mix(aViolet)).toThrow('Should be implemented');
     });
 });

@@ -1,5 +1,5 @@
-import { ChromaticCircle } from '../src/ChromaticCircleNice';
-import { Color } from '../src/Color';
+import { ChromaticCircle } from '../src/v2/chromatic_circle/ChromaticCircle';
+import { Color } from '../src/v2/chromatic_circle/Color';
 
 describe('ChromaticCircle', () => {
   describe('mixColors', () => {
