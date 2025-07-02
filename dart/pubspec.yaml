@@ -1,0 +1,19 @@
+name: chromatic_circle
+description: A Dart project for chromatic circle color mixing
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  # No Flutter dependencies needed for pure Dart
+
+dev_dependencies:
+  test: ^1.24.0
+  lints: ^2.0.0
+
+dart:
+  analyzer:
+    exclude:
+      - '**/*.g.dart'
+    strong-mode: true
