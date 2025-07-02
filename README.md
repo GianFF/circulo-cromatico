@@ -2,6 +2,18 @@
 
 Este workshop está diseñado para explorar diferentes patrones de diseño a través de la implementación de un sistema de mezcla de colores primarios (rojo, azul y amarillo) para crear colores secundarios.
 
+## Índice
+
+- [Contenido del Workshop](#contenido-del-workshop)
+- [Requisitos Previos](#requisitos-previos)
+- [Instalación de Dependencias](#instalación-de-dependencias)
+  - [Java](#java)
+  - [JavaScript/TypeScript](#javascripttypescript)
+  - [Dart](#dart)
+- [Ejecución de Tests](#ejecución-de-tests)
+- [Estructura del Workshop](#estructura-del-workshop)
+- [Objetivos del Workshop](#objetivos-del-workshop)
+
 ## Contenido del Workshop
 
 El proyecto contiene tres implementaciones principales:
