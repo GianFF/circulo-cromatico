@@ -1,2 +1,5 @@
 typescript/node_modules
 java/target
+.idea/
+circulocromatico.iml
+java/.idea/

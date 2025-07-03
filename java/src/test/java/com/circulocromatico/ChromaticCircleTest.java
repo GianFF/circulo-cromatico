@@ -45,8 +45,18 @@ public class ChromaticCircleTest {
 
     @Test
     public void testMixColorsWithSameColor() {
-        ChromaticCircle circle = new ChromaticCircle(ChromaticCircle.Color.GREEN);
+        ChromaticCircle circle = new ChromaticCircle(ChromaticCircle.Color.YELLOW);
         
-        assertEquals(ChromaticCircle.Color.GREEN, circle.mixColors(ChromaticCircle.Color.GREEN));
+        assertEquals(ChromaticCircle.Color.YELLOW, circle.mixColors(ChromaticCircle.Color.YELLOW));
+    }
+
+    @Test
+    public void testMixColorsNonExistingMixer() {
+        ChromaticCircle circle = new ChromaticCircle(ChromaticCircle.Color.VIOLET);
+
+        IllegalArgumentException illegalArgumentException = assertThrows(IllegalArgumentException.class, () ->
+                circle.mixColors(ChromaticCircle.Color.VIOLET)
+        );
+        assertEquals("No mixer found for filter: VIOLET", illegalArgumentException.getMessage());
     }
 }
