@@ -9,4 +9,7 @@ export default {
   transform: {
     '^.+\\.ts$': 'ts-jest',
   },
+  compilerOptions: {
+    'types': ['jest']
+  }
 }
